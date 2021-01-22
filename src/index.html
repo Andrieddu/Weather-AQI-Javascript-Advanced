@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Weather & Air Pollution App</title>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png">
+    
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Boostrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Link to stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <script src="/dist/main.js" defer></script>
+
+</head>
+<body>
+
+    <!-- Search Bar Section -->
+    
+    <div class="card">
+        <h1>Weather & AQI</h1>
+        <div class="search">
+            <input id="input-search" type="text" class="search-bar" placeholder="Search for City">
+            <button id="button-search" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    
+    <!-- Results Section -->
+
+        <div class="weather loading">
+            <h2 class="city">Weather in Chichester</h2>
+            <h1 class="temp">15°C</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 80%</div>
+            <div class="wind">Wind speed: 6.2 km/h</div>
+            <div class="flex0">
+                <div title="Air Quality Index. Where 1 = Good, 2 = Fair, 3 = Moderate, 4 = Poor, 5 = Very Poor" class="air-quality">Air Quality: 30</div>
+                <i class="fas fa-circle"></i>
+            </div>
+            <div title="Fine particles matter" class="pm25">PM2.5: 30 AQI</div>
+            <div title="Coarse particulate matter" class="pm10">PM10: 60 AQI</div>
+            <div title="Ozone" class="o3">O3: 1 AQI</div>
+            <div title="Nitrogen dioxide" class="no2">NO2: 25 AQI</div>
+            <div title="Sulphur dioxide" class="so2">SO2: 2 AQI</div>
+            <div title="Carbon monoxide" class="co">CO: 5 AQI</div>
+            <div class="flex1">
+                <div class="latitude">Latitude:</div>
+                <div class="lat">40.9224</div>
+            </div>
+            <div class="flex2">
+                <div class="longitude">Longitude:</div>
+                <div class="lon">9.4866</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
